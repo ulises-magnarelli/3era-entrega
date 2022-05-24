@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-size: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -136,22 +137,34 @@ main {
     transform: scale(1.05); } }
 
 /*edicion herosection*/
-.grid-section {
-  padding-top: 200px;
-  gap: 20px;
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 100px 300px;
-  grid-template-areas: "h1-grid  img-grid" "p-grid  img-grid"; }
+.herosection {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap; }
 
-.h1-grid {
-  grid-area: h1-grid; }
+.descripción {
+  flex: 1;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 10px;
+  min-width: 250px;
+  text-align: center; }
 
-.p-grid {
-  grid-area: p-grid; }
+.fotoAle {
+  flex: 1;
+  padding: 25px;
+  margin: 20px;
+  min-width: 250px;
+  border-radius: 10px;
+  text-align: center; }
 
-.img-grid {
-  grid-area: img-grid; }
+.cajasHero {
+  transition: 0.5s;
+  object-fit: over; }
+
+@media (min-width: 1024px) {
+  .cajasHero:hover {
+    transform: scale(1.05); } }
 
 /* edicion quienes somos*/
 .historia {
