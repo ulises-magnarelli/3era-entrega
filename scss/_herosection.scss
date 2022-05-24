@@ -1,0 +1,26 @@
+/*edicion herosection*/
+
+.grid-section {
+
+    padding-top: 200px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 100px 300px;
+    grid-template-areas: 
+    "h1-grid  img-grid"
+    "p-grid  img-grid"
+}
+
+.h1-grid {
+    grid-area: h1-grid;
+    
+}
+
+.p-grid {
+    grid-area: p-grid;
+}
+
+.img-grid {
+    grid-area: img-grid;
+}
